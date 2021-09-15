@@ -4,9 +4,12 @@ const dataLength = Number(input.getAttribute('data-length'));
 
 input.addEventListener('blur', inputBlur)
 
-function inputBlur() {
-    if (dataLength === input.value.length)
-    {  input.classList = 'valid' }
-    else { input.classList = 'invalid' }
-}
+// function inputBlur() {
+//     if (dataLength === input.value.length)
+//     {  input.classList = 'valid' }
+//     else { input.classList = 'invalid' }
+// }
 
+function inputBlur() {
+    dataLength === input.value.length ? input.classList = 'valid' : input.classList = 'invalid'
+}
